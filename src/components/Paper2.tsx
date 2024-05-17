@@ -6,11 +6,11 @@
 import { useEffect, useState } from 'react'
 import { useId } from 'react'
 import Image from 'next/image'
-import paper1 from '../images/paper/paper01.png'
+import paper2 from '@/images/paper/paper2.png'
 
 // const NoSSR = dynamic(() => import('../components/no-ssr'), { ssr: false })
 
-export function Paper() {
+export function Paper2() {
   const [mounted, setMounted] = useState(false);
   useEffect(() => {
     setMounted(true)
@@ -21,9 +21,8 @@ export function Paper() {
   }
 
   return (
-    <>
     <section
-        id="paper"
+        id="paper2"
         className="mx-auto grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-3 lg:max-w-max"
       >
     
@@ -33,12 +32,12 @@ export function Paper() {
               </h1>
     
                 <p className=" text-base font-medium text-gray-100">
-                Automated Analysis of Three-dimensional CBCT Images Taken in Natural Head Position That Combines Facial Pro
-                </p>
+                Novel Procedure for Automatic Registration between Cone-Beam Computed Tomography and Intraoral Scan Data Supported with 3D Segmentation
+                                </p>
     
     
     
-              <a href="https://drive.google.com/file/d/15rY7fvbR66waFg9acxJvroFkX3KsOeD1/view?usp=sharing"  target='_blank' className="text-gray-200 lg:mx-0 underline py-2">
+                <a href="https://drive.google.com/file/d/1qYhfbO5V9Nc5XbVg5M8jd33bmdaYqS29/view?usp=sharing"  target='_blank' className="text-gray-200 lg:mx-0 underline py-2">
                 다운로드</a>
     
             </div>
@@ -50,7 +49,7 @@ export function Paper() {
     
              <Image
                     className="h-full"
-                    src={paper1}
+                    src={paper2}
                     alt={""}
                   /></div>
               </div>
@@ -58,6 +57,6 @@ export function Paper() {
               </div>
       
               </section>  
-              </>
-            )
-          }
+)
+
+}

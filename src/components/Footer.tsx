@@ -1,6 +1,6 @@
 import { Container } from '@/components/Container'
 import { LogoFooter } from '@/components/Logo'
-import { NavLinks } from '@/components/NavLinks'
+
 
 function QrCodeBorder(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -16,9 +16,9 @@ function QrCodeBorder(props: React.ComponentPropsWithoutRef<'svg'>) {
 
 export function Footer() {
   return (
-    <footer className="border-t border-gray-200">
+    <footer className=" border-t border-gray-200  bg-grey-100 inset-x-0 bottom-0">
       <Container>
-        <div className="md:flex items-start justify-between gap-y-12 pb-6 pt-16 lg:flex-row lg:items-center lg:py-16">
+        <div className="md:flex items-start justify-between gap-y-10 pb-6 pt-12 lg:flex-row lg:items-center lg:py-8">
           <div className="mb-6 md:mb-0">
             <div className="flex items-center text-gray-900">
               <LogoFooter className="h-6 w-auto" />
@@ -27,9 +27,7 @@ export function Footer() {
                 <p className="mt-0 text-sm">AI dental solution software</p>
               </div>
             </div>
-            <nav className="mt-6 flex gap-8">
-              <NavLinks />
-            </nav>
+
           </div>
           <div className="text-gray-900">
             <div className="text-base font-semibold">대표자: 안장훈</div>
@@ -38,26 +36,6 @@ export function Footer() {
             <div className="mt-0 text-sm">본사: 서울특별시 구로구 경인로 661, 104동 1112호 (신도림푸르지오1차)</div>
           </div>
         </div>
-
-        {/* <div className="flex flex-col items-center border-t border-gray-200 pb-12 pt-8 md:flex-row-reverse md:justify-between md:pt-6">
-          <form className="flex w-full justify-center md:w-auto">
-            <TextField
-              type="email"
-              aria-label="Email address"
-              placeholder="Email address"
-              autoComplete="email"
-              required
-              className="w-60 min-w-0 shrink"
-            />
-            <Button type="submit" color="cyan" className="ml-4 flex-none">
-              <span className="hidden lg:inline">Join our newsletter</span>
-              <span className="lg:hidden">Join newsletter</span>
-            </Button>
-          </form>
-          <p className="mt-6 text-sm text-gray-500 md:mt-0">
-            &copy; Copyright {new Date().getFullYear()}. All rights reserved.
-          </p>
-        </div> */}
       </Container>
     </footer>
   )

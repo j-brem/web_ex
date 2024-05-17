@@ -109,9 +109,20 @@ export function Header() {
                             <MobileNavLink href="/programs">
                               Programs
                             </MobileNavLink>
-                            <MobileNavLink href="/support">
-                              Support
+
+                            <MobileNavLink href="/manualt">
+                              매뉴얼
                             </MobileNavLink>
+
+                            <MobileNavLink href="/paper">
+                              논문
+                            </MobileNavLink>
+
+                            
+                            <MobileNavLink href="/cbct">
+                              CBCT 촬영법
+                            </MobileNavLink>
+
                             <MobileNavLink href="/contact">
                               Contact
                             </MobileNavLink>
